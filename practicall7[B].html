@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dialogue Boxes Example</title>
+  <script>
+    function showDialogBoxes() {
+      // 1️⃣ Alert Box
+      alert("Welcome to the Dialogue Box Demo!");
+
+      // 2️⃣ Confirm Box
+      let confirmation = confirm("Do you want to continue?");
+      if (confirmation) {
+        // 3️⃣ Prompt Box
+        let name = prompt("Please enter your name:");
+        if (name) {
+          alert("Hello, " + name + "! Nice to meet you 😊");
+        } else {
+          alert("You didn't enter a name.");
+        }
+      } else {
+        alert("You chose to cancel. Goodbye!");
+      }
+    }
+  </script>
+</head>
+<body style="text-align:center; font-family:Arial;">
+  <h2>JavaScript Dialogue Boxes</h2>
+  <button onclick="showDialogBoxes()">Click to Show Dialogue Boxes</button>
+</body>
+</html>
